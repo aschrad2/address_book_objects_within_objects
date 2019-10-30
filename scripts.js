@@ -3,6 +3,10 @@ function AddressBook() {
   this.contacts = []
 }
 
+AddressBook.prototype.addContact = function(contact) {
+  this.contacts.push(contact);
+}
+
 // Business Logic for Contacts----------------
 funtion Contact(firstName, lastName, phoneNumber) {
   this.firstName = firstName,
